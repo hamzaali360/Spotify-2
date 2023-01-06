@@ -20,7 +20,7 @@ async function refreshAccessToken(token) {
     };
     
   } catch (error) {
-    console.error(error)
+    console.error("something is wrong", error)
     return {
       ...token,
       error: "RefreshAccessTokenError",
